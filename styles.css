@@ -1,1 +1,86 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+:root {
+  --pry-colour1: hsl(233, 47%, 7%);
+  --pry-colour2: hsl(244, 38%, 16%);
+  --pry-colour3: hsl(277, 64%, 61%);
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 500px;
+  background-color: var(--pry-colour1);
+  font-family: 'Inter', sans-serif;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+p {
+  display: inline-block;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 17rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.container .img-container {
+  z-index: 7;
+  background: rgba(170, 92, 219, 0.9);
+}
+
+img {
+  margin-bottom: 0px;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  vertical-align: middle;
+}
+
+.description {
+  padding: 2rem 1rem;
+  background: var(--pry-colour2);
+}
+
+span {
+  color: var(--pry-colour3);
+}
+
+#hero-header {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+#hero-paragraph {
+  display: inline-block;
+  margin-top: 0;
+}
+
+#stats-container #header1 {
+  margin-top: 2.5rem;
+}
+
+#stats-container h2 {
+  font-size: 15px;
+  margin-top: 2rem;
+  margin-bottom: 0.1rem;
+}
+
+#stats-container p {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=styles.css.map */
