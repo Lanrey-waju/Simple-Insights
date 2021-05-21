@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
 :root {
-  --pry-colour1: hsl(233, 47%, 7%);
-  --pry-colour2: hsl(244, 38%, 16%);
-  --pry-colour3: hsl(277, 64%, 61%);
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
 }
 
 body {
   width: 500px;
   margin: 0 auto 0 auto;
-  background-color: var(--pry-colour1);
+  background-color: var(--very-dark-blue);
   font-family: 'Inter', sans-serif;
   color: white;
   padding: 2rem 1rem;
@@ -46,11 +46,11 @@ img {
 
 .description {
   padding: 2rem 1rem;
-  background: var(--pry-colour2);
+  background: var(--dark-blue);
 }
 
 span {
-  color: var(--pry-colour3);
+  color: var(--soft-violet);
 }
 
 #hero-header {
@@ -78,5 +78,41 @@ span {
   margin: 0;
   padding: 0;
   font-size: 11px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 11rem;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 720px;
+    margin: auto auto;
+  }
+  .container .description {
+    width: 50%;
+  }
+  .container .img-container {
+    width: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(236, 76, 76, 0.8)), to(rgba(253, 253, 122, 0.8)));
+    background: linear-gradient(rgba(236, 76, 76, 0.8), rgba(253, 253, 122, 0.8));
+    background-image: url("/images/image-header-desktop.jpg");
+  }
+  img {
+    display: none;
+    opacity: 0.4;
+  }
+  p {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
