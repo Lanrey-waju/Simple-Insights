@@ -13,6 +13,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 500px;
+  margin: 0;
   background-color: var(--pry-colour1);
   font-family: 'Inter', sans-serif;
   color: white;
@@ -30,7 +31,7 @@ p {
 }
 
 .container {
-  width: 17rem;
+  width: 18rem;
   border-radius: 10px;
   display: inline-block;
 }
@@ -82,5 +83,6 @@ span {
 #stats-container p {
   margin: 0;
   padding: 0;
+  font-size: 11px;
 }
 /*# sourceMappingURL=styles.css.map */
